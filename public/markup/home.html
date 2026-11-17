@@ -1,0 +1,83 @@
+<main class="rw-wrap rw-home">
+  <section class="rw-hero-block">
+    <p class="rw-badge"><span class="rw-dot"></span> On-page SEO audit</p>
+    <h1>See the score behind the page.</h1>
+    <p class="rw-lede">Paste a public URL. Rank Wise checks the title, meta description, headings, images, links, URL structure, robots.txt and sitemap, then shows what to fix.</p>
+    <div class="rw-stage-panel">
+      <form id="audit-form" class="rw-form" novalidate>
+        <label class="rw-sr" for="audit-url">Website URL</label>
+        <div class="rw-form-row">
+          <input id="audit-url" name="url" type="text" inputmode="url" autocomplete="url" placeholder="https://example.com" spellcheck="false">
+          <button id="audit-submit" class="rw-btn" type="submit">Run audit</button>
+        </div>
+        <p id="audit-status" class="rw-status" aria-live="polite"></p>
+        <p id="audit-error" class="rw-error" role="alert" hidden></p>
+        <p id="audit-hint" class="rw-hint">Public pages only. Invalid URLs come back with a clear message.</p>
+      </form>
+      <div class="rw-quick">
+        <button type="button" class="rw-chip" data-url="example.com">example.com</button>
+        <button type="button" class="rw-chip" data-url="wikipedia.org">wikipedia.org</button>
+        <button type="button" class="rw-chip" data-url="developer.mozilla.org">developer.mozilla.org</button>
+        <button type="button" class="rw-chip" id="sample-audit">Sample report</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="rw-board" aria-label="What a report looks like">
+    <div class="rw-window">
+      <div class="rw-window-bar">
+        <span></span><span></span><span></span>
+        <em>Preview layout</em>
+      </div>
+      <div class="rw-window-grid">
+        <aside>
+          <p>Checks</p>
+          <ul>
+            <li><i class="is-ok"></i> Title</li>
+            <li><i class="is-ok"></i> Meta</li>
+            <li><i class="is-mid"></i> Headings</li>
+            <li><i class="is-mid"></i> Images</li>
+            <li><i class="is-ok"></i> Links</li>
+            <li><i class="is-ok"></i> URL</li>
+            <li><i class="is-bad"></i> robots.txt</li>
+            <li><i class="is-ok"></i> Sitemap</li>
+          </ul>
+        </aside>
+        <div class="rw-window-main">
+          <div class="rw-mini-score">
+            <strong>86</strong>
+            <span>Page score</span>
+          </div>
+          <div class="rw-bars" aria-hidden="true">
+            <div><b style="width:92%"></b></div>
+            <div><b style="width:74%"></b></div>
+            <div><b style="width:61%"></b></div>
+            <div><b style="width:48%"></b></div>
+          </div>
+          <div class="rw-mini-stats">
+            <article><span>Passed</span><strong>5</strong></article>
+            <article><span>Warnings</span><strong>2</strong></article>
+            <article><span>Errors</span><strong>1</strong></article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rw-checks" aria-labelledby="checks-title">
+    <div class="rw-section-head">
+      <h2 id="checks-title">Eight checks. One page.</h2>
+      <p>Not a ranking prediction, and not a crawl of the whole site.</p>
+    </div>
+    <ol class="rw-check-grid">
+      <li><span>01</span><strong>Page title</strong><p>Present, and about 30–60 characters.</p></li>
+      <li><span>02</span><strong>Meta description</strong><p>A summary of about 70–160 characters.</p></li>
+      <li><span>03</span><strong>Headings</strong><p>One H1, then H2 and H3 in order.</p></li>
+      <li><span>04</span><strong>Image alt text</strong><p>Meaningful images should describe themselves.</p></li>
+      <li><span>05</span><strong>Links</strong><p>Internal and external links, counted apart.</p></li>
+      <li><span>06</span><strong>URL structure</strong><p>HTTPS, a real domain, and a tidy path.</p></li>
+      <li><span>07</span><strong>robots.txt</strong><p>The crawl file at the site root.</p></li>
+      <li><span>08</span><strong>sitemap.xml</strong><p>A list of important pages, if it exists.</p></li>
+    </ol>
+  </section>
+</main>
