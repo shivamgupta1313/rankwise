@@ -11,3 +11,6 @@ attachments/
 artifacts/
 Minor-Project/
 __pycache__/
+
+backend/
+render.yaml
