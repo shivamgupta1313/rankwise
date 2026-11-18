@@ -1,4 +1,4 @@
-const API_BASE = "https://YOUR-SERVICE.onrender.com";
+const API_BASE = "";
 (function () {
   const STEPS = [
     "Validating the URL",
